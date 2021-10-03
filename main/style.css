@@ -1,0 +1,289 @@
+*{
+    margin:0;
+    padding:0;
+}
+html{
+    box-sizing: border-box;
+}
+*, *:after, *:before{
+    box-sizing: inherit;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-width: 320px;
+    overflow-x: hidden;
+    background: url(http://www.dejurka.ru/wp-content/uploads/2014/09/free-space-backgrounds-and-textures14.jpg);
+}
+body :link{
+    color:rgb(228, 227, 227);
+}
+body :visited{
+    color:rgb(172, 149, 168);
+}
+
+/*можно задать стиль для ссылок с помощью a:link и a:visited и a:hover*/
+
+/* HEADER */
+header{
+    display:flex;
+    width: 100%;
+    min-height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    background: -webkit-linear-gradient(0deg, rgb(12, 7, 25), rgb(33, 16, 51), rgb(33, 21, 55));
+    background: -moz-linear-gradient(0deg, rgb(12, 7, 25), rgb(33, 16, 51), rgb(33, 21, 55));
+    background: linear-gradient(0deg, rgb(12, 7, 25), rgb(33, 16, 51), rgb(33, 21, 55));
+    border-bottom: 1px solid rgb(175, 174, 174);
+    border-top: 1px solid rgb(175, 174, 174);
+}
+header > h1{
+    font-family:'Rounded_Elegance';
+    margin-right: 20px;
+    color:rgb(175, 174, 174);
+    
+}
+header > a{
+    display: flex;
+    float:left;
+    width: 70px;
+    height: 70px;
+    margin-left: 10px;
+}
+@media (min-width:640px) {
+    header{
+        min-height: 110px;
+    }
+    header h1{
+        margin-right: 70px;
+    }
+    header a{
+        margin-left: 20px;
+    }
+}
+@media (min-width:768px) {
+    header{
+        min-height: 110px;
+    }
+    header h1{
+        margin-right: 90px;
+    }
+    header a{
+        margin-left: 40px;
+    }
+}
+@media (min-width:1024px) {
+    header a{
+        margin-left: 60px;
+    }
+    header h1{
+        margin-right: 110px;
+    }
+}
+@media (min-width:1440px) {
+    header h1{
+        margin-right: 100px;
+    }
+}
+/* NAVIGATION */
+.navigation{
+    margin:5px 0 0 0;
+    font-family:'Rounded_Elegance';
+    background: -webkit-linear-gradient(0deg, rgb(12, 7, 25), rgb(33, 16, 51), rgb(33, 21, 55));
+    background: -moz-linear-gradient(0deg, rgb(12, 7, 25), rgb(33, 16, 51), rgb(33, 21, 55));
+    background: linear-gradient(0deg, rgb(12, 7, 25), rgb(33, 16, 51), rgb(33, 21, 55));
+    border: 1px solid rgb(175, 174, 174);
+}
+.navigation ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin-left: 10px;
+}
+.navigation li{
+    margin: 2px 0;
+}
+.navigation a{
+    text-decoration: none;
+    color:rgb(175, 174, 174);
+}
+@media (min-width: 640px){
+    .navigation{
+        min-height: 40px;
+    }
+    .navigation ul{
+        flex-direction: row;
+        margin-top: 10px;
+    }
+    .navigation li{
+        margin:auto;
+    }
+}
+@media (min-width: 1024px)
+{
+    .navigation{
+        width: 960px;
+        margin: 5px auto;
+    }
+}
+
+/* REFERENCES LIST */
+#ref_list {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0;
+    border: 1px solid rgb(175, 174, 174);
+    font-family:'Rounded_Elegance';
+    color:rgb(175, 174, 174);
+    background: -webkit-linear-gradient(0deg, rgb(12, 7, 25), rgb(33, 16, 51), rgb(33, 21, 55));
+    background: -moz-linear-gradient(0deg, rgb(12, 7, 25), rgb(33, 16, 51), rgb(33, 21, 55));
+    background: linear-gradient(0deg, rgb(12, 7, 25), rgb(33, 16, 51), rgb(33, 21, 55));
+}
+#ref_list h2{
+    margin: 10px 0;
+    text-align: center;
+    color:rgb(175, 174, 174);
+}
+#ref_list ol{
+    margin-left: 30px;
+}
+#ref_list li{
+    margin: 5px 0;
+}
+#ref_list ul{
+    margin-left: 30px;
+}
+#ref_list #paimon{
+    width: 140px;
+    height: 155px;
+}
+@media (min-width:640px) {
+    #ref_list ol{
+        margin-left: 45px;
+    }
+}
+@media (min-width: 1024px)
+{
+    #ref_list{
+        width: 960px;
+        margin: 0 auto 5px auto;
+    }
+}
+/* TABLE */
+.table{
+    order:1;
+    margin: 5px 0;
+    display: flex;
+    border: 1px solid rgb(175, 174, 174);
+    font-family:'Rounded_Elegance';
+    background: -webkit-linear-gradient(0deg, rgb(12, 7, 25), rgb(33, 16, 51), rgb(33, 21, 55));
+    background: -moz-linear-gradient(0deg, rgb(12, 7, 25), rgb(33, 16, 51), rgb(33, 21, 55));
+    background: linear-gradient(0deg, rgb(12, 7, 25), rgb(33, 16, 51), rgb(33, 21, 55));
+}
+.table table{
+    color:rgb(175, 174, 174);
+    margin: 0 5px 10px 5px;
+}
+.table caption{
+    margin: 10px auto;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.table th{
+    padding: 0 5px;
+    font-weight: normal;
+}
+.table tr:nth-child(even){
+    background-color: rgb(58, 52, 109);
+}
+.table tr:nth-child(odd){
+    background-color: rgb(59, 71, 134);
+}
+@media (min-width:400px){
+    .table table{
+        margin: 0 auto 10px auto;
+    }
+}
+@media (min-width:1024px){
+    .table{
+        order:0;
+        width: 960px;
+        margin: 0 auto 5px auto;
+    }
+}
+
+/* FORM */
+.form{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(175, 174, 174);
+    font-family:'Rounded_Elegance';
+    color:rgb(175, 174, 174);
+    background: -webkit-linear-gradient(0deg, rgb(12, 7, 25), rgb(33, 16, 51), rgb(33, 21, 55));
+    background: -moz-linear-gradient(0deg, rgb(12, 7, 25), rgb(33, 16, 51), rgb(33, 21, 55));
+    background: linear-gradient(0deg, rgb(12, 7, 25), rgb(33, 16, 51), rgb(33, 21, 55));
+
+}
+.form h2{
+    margin: 10px 0;
+    text-align: center;
+    color:rgb(175, 174, 174);
+}
+.form form{
+    margin: 0 0 10px 10px;
+}
+.form input{
+    margin: 5px 0;
+}
+.form select{
+    margin: 5px 0;
+}
+.form textarea{
+    margin: 5px 0;
+    max-width: 220px;
+    max-height: 300px;
+}
+@media (min-width:640px) {
+    .form form{
+        margin: 0 0 10px 30px;
+    }
+    .form input{
+        margin: 10px 0;
+    }
+    .form select{
+        margin: 10px 0;
+    }
+    .form textarea{
+        margin: 10px 0;
+    }
+}
+@media (min-width:1024px){
+    .form{
+        width: 960px;
+        margin: 0 auto 5px auto;
+    }
+}
+/* FOOTER */
+footer{
+    order:1;
+    font-family:'Rounded_Elegance';
+    display:flex;
+    background: -webkit-linear-gradient(0deg, rgb(12, 7, 25), rgb(33, 16, 51), rgb(33, 21, 55));
+    background: -moz-linear-gradient(0deg, rgb(12, 7, 25), rgb(33, 16, 51), rgb(33, 21, 55));
+    background: linear-gradient(0deg, rgb(12, 7, 25), rgb(33, 16, 51), rgb(33, 21, 55));
+    align-items: center;
+    min-height: 80px;
+    border-bottom: 1px solid rgb(175, 174, 174);
+    border-top: 1px solid rgb(175, 174, 174);
+}
+footer > p{
+    margin-left: 10px;
+    color:rgb(175, 174, 174);
+}
+@font-face {
+    font-family: "Rounded_Elegance"; 
+    src: url("./font/Rounded_Elegance.ttf") format("truetype");
+    font-style: normal; 
+    font-weight: normal; 
+    } 
