@@ -1,0 +1,179 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background: url(http://www.dejurka.ru/wp-content/uploads/2014/09/free-space-backgrounds-and-textures14.jpg);
+}
+header{
+    display:flex;
+    width: auto ;
+    margin: 5px auto;
+    height: 300px;
+    background: -webkit-linear-gradient(0deg, rgb(12, 7, 25), rgb(33, 16, 51), rgb(33, 21, 55));
+    background: -moz-linear-gradient(0deg, rgb(12, 7, 25), rgb(33, 16, 51), rgb(33, 21, 55));
+    background: linear-gradient(0deg, rgb(12, 7, 25), rgb(33, 16, 51), rgb(33, 21, 55));
+    align-items: center;
+    border-bottom: 1px solid rgb(175, 174, 174);
+    border-top: 1px solid rgb(175, 174, 174);
+}
+header > h1{
+    display: inline;
+    font-family:'Rounded_Elegance';
+    color:rgb(175, 174, 174);
+    font-size: 80px;
+    float:left;
+    margin-left: 12%;
+}
+header > a{
+    display: flex;
+    margin-left: 18.5%;
+    float:left;
+}
+
+.navigation{
+    font-family:'Rounded_Elegance';
+    height:50px;
+    width:960px;
+    background: -webkit-linear-gradient(0deg, rgb(12, 7, 25), rgb(33, 16, 51), rgb(33, 21, 55));
+    background: -moz-linear-gradient(0deg, rgb(12, 7, 25), rgb(33, 16, 51), rgb(33, 21, 55));
+    background: linear-gradient(0deg, rgb(12, 7, 25), rgb(33, 16, 51), rgb(33, 21, 55));
+    margin: 5px auto;
+    border: 1px solid rgb(175, 174, 174);
+}
+.navigation ul {
+    list-style: none;
+    margin:0;
+    padding-left: 0;
+}
+.navigation li {
+    float:left;
+    text-align: center;
+}
+.navigation a{
+    display: block;
+    width: 200px;
+    text-decoration: none;
+    color:rgb(175, 174, 174);
+    padding-top:15px;
+    margin-left:90px;
+}
+
+#ref_list {
+    border: 1px solid rgb(175, 174, 174);
+    font-family:'Rounded_Elegance';
+    color:rgb(175, 174, 174);
+    width:960px;
+    height:1390px;
+    background: -webkit-linear-gradient(0deg, rgb(12, 7, 25), rgb(33, 16, 51), rgb(33, 21, 55));
+    background: -moz-linear-gradient(0deg, rgb(12, 7, 25), rgb(33, 16, 51), rgb(33, 21, 55));
+    background: linear-gradient(0deg, rgb(12, 7, 25), rgb(33, 16, 51), rgb(33, 21, 55));
+    margin:5px auto;
+}
+#ref_list h2{
+    text-align: center;
+    color:rgb(175, 174, 174);
+    padding-top:5px;
+}
+#ref_list li{
+    margin-left:30px;
+    padding-top: 10px;
+}
+#ref_list ul{
+    margin-left:25px;
+    margin-top:5px;
+}
+
+.table{
+    border: 1px solid rgb(175, 174, 174);
+    font-family:'Rounded_Elegance';
+    width: 960px;
+    height: 540px;
+    margin:5px auto;
+    background: -webkit-linear-gradient(0deg, rgb(12, 7, 25), rgb(33, 16, 51), rgb(33, 21, 55));
+    background: -moz-linear-gradient(0deg, rgb(12, 7, 25), rgb(33, 16, 51), rgb(33, 21, 55));
+    background: linear-gradient(0deg, rgb(12, 7, 25), rgb(33, 16, 51), rgb(33, 21, 55));
+}
+.table table{
+    margin-left: 300px;
+    color:rgb(175, 174, 174);
+}
+.table caption{
+    margin-top:5px;
+    font-size: 20px;
+}
+.table tr:nth-child(even){
+    background-color: rgb(58, 52, 109);
+}
+.table tr:nth-child(odd){
+    background-color: rgb(59, 71, 134);
+}
+
+.form{
+    border: 1px solid rgb(175, 174, 174);
+    font-family:'Rounded_Elegance';
+    color:rgb(175, 174, 174);
+    width: 960px;
+    height: 700px;
+    margin:5px auto;
+    background: -webkit-linear-gradient(0deg, rgb(12, 7, 25), rgb(33, 16, 51), rgb(33, 21, 55));
+    background: -moz-linear-gradient(0deg, rgb(12, 7, 25), rgb(33, 16, 51), rgb(33, 21, 55));
+    background: linear-gradient(0deg, rgb(12, 7, 25), rgb(33, 16, 51), rgb(33, 21, 55));
+}
+.form h2{
+    text-align: center;
+    color:rgb(175, 174, 174);
+    padding-top:5px;
+}
+.form label{
+    margin-left:10px;
+    padding: 10px;
+}
+.form span{
+    margin-left:10px;
+    padding: 10px;
+}
+.form input{
+    margin-left:20px;
+    margin-top:8px;
+    margin-bottom: 8px;
+}
+.form select{
+    margin-left:20px;
+    margin-top:8px;
+    margin-bottom: 8px;
+}
+.form textarea{
+    margin-left:20px;
+    margin-top:8px;
+    margin-bottom: 8px;
+    resize:none;
+    width: 350px;
+    height: 150px;
+}
+
+footer{
+    font-family:'Rounded_Elegance';
+    display:flex;
+    width: auto ;
+    margin: 5px auto;
+    height: 300px;
+    background: -webkit-linear-gradient(0deg, rgb(12, 7, 25), rgb(33, 16, 51), rgb(33, 21, 55));
+    background: -moz-linear-gradient(0deg, rgb(12, 7, 25), rgb(33, 16, 51), rgb(33, 21, 55));
+    background: linear-gradient(0deg, rgb(12, 7, 25), rgb(33, 16, 51), rgb(33, 21, 55));
+    align-items: center;
+    border-bottom: 1px solid rgb(175, 174, 174);
+    border-top: 1px solid rgb(175, 174, 174);
+}
+footer > p{
+    margin-top: 230px;
+    color:rgb(175, 174, 174);
+    font-size: 35px;
+}
+@font-face {
+    font-family: "Rounded_Elegance"; 
+    src: url("./font/Rounded_Elegance.ttf") format("truetype");
+    font-style: normal; 
+    font-weight: normal; 
+    } 
+        
