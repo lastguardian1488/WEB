@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = UTF-8>
+        <title>Страница ради страницы</title>
+        <meta name="robots" content="noindex">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+        <script defer src= "script.js"></script>
+        <link rel = "stylesheet" type = "text/css" href = "style.css" > 
+        <meta name = "viewport" content="width=device-width, initial scale = 1">
+    </head>
+    <body>
+        <div class="container-fluid mb-1" id = "for_header_bg">
+            <div class="container p-0">
+                <div class="row">
+                    <header class = "header">
+                        <div class="col">
+                            <a><img class = "logo" src = "./logo/x_--unscreen.gif" alt = "логотип"></a>
+                        </div>
+                        <div class="col btn-group-vertical">
+                            <h1>Задание 4</h1>
+                        </div>
+                    </header>
+                </div>
+            </div>
+        </div>
+        <div class="container d-flex flex-column">
+            <nav class = "navbar row navbar-expand-sm mb-1 bs">
+                <div class="navbar-collapse">
+                    <ul class = "navbar-nav row-cols-sm-3 mx-2 w-100 text-sm-center">
+                            <li class = "nav-item"><a class = "nav-link" href = "./index.html">Главная</a></li>
+                            <li class = "nav-item"><a class = "nav-link" href = "#table_1">Таблица</a></li>
+                            <li class = "nav-item"><a class = "nav-link" href = "#form_1">Форма</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="row mb-1">
+                <div id = "ref_list">
+                    <div class="col-12 my-2"><h2>Список ссылок</h2></div>
+                    <div class="col-12">
+                        <ol>
+                            <li><a href ="http://example.com" title = "Просто сайт">Ссылка на сайт example.com</a></li> 
+                            <li><a href = "https://example.com/" title = "А зачем ты сюда навел?">Ссылка на сайт example.com(https)</a></li>
+                            <li><a href = "ftp://example.com/myfile.zip/news.html">Ссылка на файл на сервере FTP без авторизации</a></li>
+                            <li><a href = "ftp://user:password@example.com/myfile.zip/news.html" >Ссылка на файл на сервере FTP с авторизацией</a></li>
+                            <li><a href = "http://htmlbook.ru/content/ssylki-vnutri-stranitsy#similar" title = "Фрагмент - HTML по теме">Ссылка на фрагмент страницы</a></li>
+                            <li><a href = "#Form" title = "Если вам не интересны мои ссылки...">Перейти к заполнению формы</a></li>
+                            <li><a href = "https://www.multitran.com/m.exe?l1=3&l2=2" title = "Первый параметр - немецкий язык, второй - русский">Ссылка с двумя параметрами</a></li>
+                            <li>Навигация сайта "http://htmlbook.ru" в разделе HTML
+                                <ul>
+                                    <li><a href = "http://htmlbook.ru/samhtml">Самоучитель</a></li>
+                                    <li><a href = "http://htmlbook.ru/html">Справочник</a></li>
+                                    <li><a href = "http://htmlbook.ru/xhtml">XHTML</a></li>
+                                    <li><a href = "http://htmlbook.ru/html5">HTML5</a></li>
+                                </ul>
+                            </li>
+                            <li><a>Пустая ссылка</a></li>
+                            <li><a href = "">Вроде ссылка, ан нет</a></li>
+                            <li><a href="https://www.multitran.com" rel="nofollow" title = "Не называй её!!">Запрещенная ссылка для поисковиков</a></li>
+                            <li><a href="index.html">Запрещенная ссылка для индексации</a></li>
+                            <li>Данное предложение написано только, чтобы вы нажали <span><a href = "http://risovach.ru/upload/2016/01/mem/v-mire-grustit-odin-kotik_103654661_orig_.jpg">сюда</a></span></li>
+                            <li><a href="https://example.com" ><img src = "https://shikimori.one/system/characters/original/194150.jpg" alt = "Это Паймон!" id = "paimon"></a></li>
+                            <li><img src = "https://animestars.org/uploads/posts/2018-02/1517699052_1.jpg" usemap="#akame" alt = "А это Акаме">
+                                <map name = akame>
+                                    <area shape = "circle" coords="90,50,40" href = "https://yummyanime.club/catalog/item/ubijca-akame" title = "Хочешь посмотреть аниме?" alt = "Тут личико Акаме, кликнув по нему можно глянуть аниме">
+                                    <area shape="rect" coords = "130,200,230,290" href = "https://akamegakill.fandom.com/ru/wiki/Мурасаме" title = "Крутой меч" alt = "это просто меч, ну камон">
+                                </map>
+                            </li>
+                            <li><a href = "./index.html">Ссылка в текущем каталоге</a></li>
+                            <li><a href = "https://example.com/about/lmao.html">Ссылка на страницу в каталоге about</a></li>
+                            <li><a href = "../lmao.html">Ссылка на документ уровнем выше</a></li>
+                            <li><a href = "../../lmao.html">Ссылка на документ на два уровня выше</a></li>
+                            <li><a href = "index.html">Сокращенная ссылка на главную</a></li>
+                            <li><a href = "/about/lmao.html">Сокращенная ссылка на внутреннюю</a></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-1 order-sm-0 order-1">
+                <div class="table">
+                    <div class="col-12 mb-2 text-center">
+                        <table class = " mx-auto" id = "table_1">
+                            <caption class = "my-2">Таблица размеров обуви</caption>
+                            <tr>
+                                <th>Россия</th>
+                                <th>Британия</th>
+                                <th>Европа</th>
+                                <th>Длина ступни, см</th>
+                            </tr>
+                            <tr><td>34,5</td><td>3,5</td><td>36</td><td>23</td></tr>
+                            <tr><td>35,5</td><td>4</td><td>36⅔</td><td>23–23,5</td></tr>
+                            <tr><td>36</td><td>4,5</td><td>37⅓</td><td>23,5</td></tr>
+                            <tr><td>36,5</td><td>5</td><td>38</td><td>24</td></tr>
+                            <tr><td>37</td><td>5,5</td><td>38⅔</td><td>24,5</td></tr>
+                            <tr><td>38</td><td>6</td><td>39⅓</td><td>25</td></tr>
+                            <tr><td>38,5</td><td>6,5</td><td>40</td><td>25,5</td></tr>
+                            <tr><td>39</td><td>7</td><td>40⅔</td><td>25,5–26</td></tr>
+                            <tr><td>40</td><td>7,5</td><td>41⅓</td><td>26</td></tr>
+                            <tr><td>40,5</td><td>8</td><td>42</td><td>26,5</td></tr>
+                            <tr><td>41</td><td>8,5</td><td>42⅔</td><td>27</td></tr>
+                            <tr><td>42</td><td>9</td><td>43⅓</td><td>27,5</td></tr>
+                            <tr><td>43</td><td>9,5</td><td>44</td><td>28</td></tr>
+                            <tr><td>43,5</td><td>10</td><td>44⅔</td><td>28–28,5</td></tr>
+                            <tr><td>44</td><td>10,5</td><td>45⅓</td><td>28,5–29</td></tr>
+                            <tr><td>44,5</td><td>11</td><td>46</td><td>29</td></tr>
+                            <tr><td>45</td><td>11,5</td><td>46⅔</td><td>29,5</td></tr>
+                            <tr><td>46</td><td>12</td><td>47⅓</td><td>30</td></tr>
+                            <tr><td>46,5</td><td>12,5</td><td>48</td><td>30,5</td></tr>
+                            <tr><td>47</td><td>13</td><td>48⅔</td><td>31</td></tr>
+                            <tr><td>48</td><td>13,5</td><td>49⅓</td><td>31,5</td></tr>
+                        </table>
+                    </div>                    
+                </div>
+            </div>
+            <div class="row mb-1">
+                <div class="calculator">
+                    <div class="col my-2 text-center">
+                        <h2>Калькулятор</h2>
+                    </div>
+                    <div class="row gy-2 gx-1 my-2">
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-7">
+                            <span>Цена товара:</span>
+                        </div>
+                        <div class="col-lg-10 col-md-9 col-sm-8 col-5">
+                            <label>
+                                <input class = "" name = "prod-price" value = "" type = "text"><br />
+                            </label>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-7">
+                            <span>Количество товара:</span>
+                        </div>
+                        <div class="col-lg-10 col-md-9 col-sm-8 col-5">
+                            <label>
+                                <input name = "prod-amount" value = "" type = "text"><br />
+                            </label>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-7">
+                            <label>
+                                <button id="calc-button">Посчитать</button>
+                            </label>
+                        </div>
+                        <div class="col-lg-10 col-md-9 col-sm-8 col-5">
+                            <div id = "result"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-1">
+                <div class = "form">
+                    <div class="col-12 my-2">
+                        <h2 id = "form_1">Форма</h2>
+                        <form action="http://risovach.ru/upload/2016/01/mem/v-mire-grustit-odin-kotik_103654661_orig_.jpg" method="GET">
+                            <label> Ваше имя:<br /><input name="field-name-1" value=""/></label><br />
+                            <label> Ваш email:<br/><input name="field-email" value="test@example.com" type="email"/></label><br/>
+                            <label> Дата Рождения:<br /><input name="field-date" value="1984-09-01" type="date" /></label><br />
+                            <span>Ваш пол:<br /></span> 
+                            <label><input type="radio" name="sex" value="man" />Мужской</label>
+                            <label><input type="radio" name="sex" value="woman" />Женский</label><br /> 
+                            <span>Количество конечностей:<br /></span>
+                            <label><input type="radio" name="NumberOfLimbs" value="4" />4</label>
+                            <label><input type="radio" name="NumberOfLimbs" value="6" />6</label>
+                            <label><input type="radio" name="NumberOfLimbs" value="15" />15</label><br />
+                            <label>
+                                Ваши суперспособности:<br />
+                                <select name="SuperAbilities" multiple="multiple">
+                                    <option value="Super1">X-RAY видение</option>
+                                    <option value="Super2">Вставать по будильнику</option>
+                                    <option value="Super3">Полёт</option>
+                                    <option value="Super4">Бессмертие</option>
+                                </select>
+                            </label><br />
+                            <label> Биография:<br /><textarea name="field-name-2">С чего начнёте?</textarea></label><br />
+                            <label><br /><input type="checkbox" name="check-1" />С контрактом ознакомлен(а)</label><br />
+                            <label>Отправить форму:<input type="submit" value="Отправить" /></label>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class = "container-fluid">
+            <div class="row">
+                <footer class = "footer btn-group-vertical">
+                    <div class="col-12 mt-2">
+                        <p id = "footer-text">© Тарас Савчук 2021</p>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </body>
+</html>
