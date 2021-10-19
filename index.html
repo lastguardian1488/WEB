@@ -15,11 +15,11 @@
             <div class="container p-0">
                 <div class="row">
                     <header class = "header">
-                        <div class="col">
+                        <div class="col-md-4 col">
                             <a><img class = "logo" src = "./logo/x_--unscreen.gif" alt = "логотип"></a>
                         </div>
-                        <div class="col btn-group-vertical">
-                            <h1>Задание 4</h1>
+                        <div class="col-md-8 col btn-group-vertical">
+                            <h1>Страница ради страницы</h1>
                         </div>
                     </header>
                 </div>
@@ -115,35 +115,44 @@
             </div>
             <div class="row mb-1">
                 <div class="calculator">
-                    <div class="col my-2 text-center">
-                        <h2>Калькулятор</h2>
-                    </div>
-                    <div class="row gy-2 gx-1 my-2">
-                        <div class="col-lg-2 col-md-3 col-sm-4 col-7">
-                            <span>Цена товара:</span>
-                        </div>
-                        <div class="col-lg-10 col-md-9 col-sm-8 col-5">
-                            <label>
-                                <input class = "" name = "prod-price" value = "" type = "text"><br />
-                            </label>
-                        </div>
-                        <div class="col-lg-2 col-md-3 col-sm-4 col-7">
-                            <span>Количество товара:</span>
-                        </div>
-                        <div class="col-lg-10 col-md-9 col-sm-8 col-5">
-                            <label>
-                                <input name = "prod-amount" value = "" type = "text"><br />
-                            </label>
-                        </div>
-                        <div class="col-lg-2 col-md-3 col-sm-4 col-7">
-                            <label>
-                                <button id="calc-button">Посчитать</button>
-                            </label>
-                        </div>
-                        <div class="col-lg-10 col-md-9 col-sm-8 col-5">
-                            <div id = "result"></div>
-                        </div>
-                    </div>
+                    <form>
+                            <div class="col my-2 text-center">
+                                <h2>Калькулятор</h2>
+                            </div>
+                            <div class="row my-2 gy-2">
+                                <div class="col-12">
+                                    <span>Введите количество товара:</span>
+                                    <label><input type="text" name = "prodAmount"></label>
+                                </div>
+                                <div class="col-12">
+                                    <span>Выберите тип товара:</span>
+                                    <select name="prodType">
+                                        <option hidden></option>
+                                        <option value="1">Кружка</option>
+                                        <option value="2">Стеклянный стакан</option>
+                                        <option value="3">Хрусталь</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <div id="radios">
+                                        <label><input type="radio" name="prodOptions" value="option1">Доп. слой упаковки</label>
+                                        <label><input type="radio" name="prodOptions" value="option2">Утолщенный картон</label>
+                                    </div>
+                                    <div id="checkboxes">
+                                        <label><input type="checkbox" name="prop1">Доставка на БТР</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row my-2">
+                                <div class="col">
+                                    <span>Стоимость:</span>
+                                    <label><div id="prodPrice"></div></label>
+                                </div>
+                                <div class="col">
+                                    <label><button onclick="return false" id = "clearButton">Очистить ввод</button></label>
+                                </div>
+                            </div>
+                    </form>
                 </div>
             </div>
             <div class="row mb-1">

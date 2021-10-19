@@ -42,6 +42,10 @@ a:hover{
     font-family:'Rounded_Elegance';
     color:rgb(199, 199, 199);
 }
+.header .logo{
+    width:150px;
+    height: auto;
+}
 
 /* NAVIGATION */
 .navbar{
@@ -135,7 +139,7 @@ a:hover{
 .calculator h2{
     font-weight:normal;
 }
-.calculator input{
+.calculator input[type]{
     color:rgb(199, 199, 199);
     border: 1px solid rgb(206, 206, 206);
     background-color: rgb(93, 82, 110);
@@ -146,7 +150,13 @@ a:hover{
     background-color: rgb(93, 82, 110);
     border: 1px solid rgb(206, 206, 206);
 }
-.calculator #result{
+.calculator select{
+    color:rgb(199, 199, 199);
+    border: 1px solid rgb(206, 206, 206);
+    background-color: rgb(93, 82, 110);
+}
+
+.calculator #prodPrice{
     max-width: 120px;
     min-height: 26px;
     color:rgb(199, 199, 199);
