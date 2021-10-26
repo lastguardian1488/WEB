@@ -88,6 +88,36 @@ a:hover{
     height: 155px;
 }
 
+/* SLIDER */
+.wrapper{
+    border: 1px solid rgb(199, 199, 199);
+    font-family:'Rounded_Elegance';
+    color:rgb(199, 199, 199);
+    background-color: -webkit-linear-gradient(0deg, rgb(12, 7, 25), rgb(33, 16, 51), rgb(33, 21, 55));
+    background: -moz-linear-gradient(0deg, rgb(12, 7, 25), rgb(33, 16, 51), rgb(33, 21, 55));
+    background: linear-gradient(0deg, rgb(12, 7, 25), rgb(33, 16, 51), rgb(33, 21, 55));
+}
+.slider-image{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+@media (min-width:400px) {
+    .slider-image{
+        width: 150px;
+        height: 150px;
+    }
+}
+@media (min-width:500px) {
+    .slider-image{
+        width: 200px;
+        height: 200px;
+    }
+}
+.slick-slider .slick-dots li button:before{
+    color:rgb(255, 255, 255);
+}
+
 /* TABLE */
 .table{
     margin: 0;
