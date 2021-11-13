@@ -28,7 +28,14 @@ a:hover{
 
 /*можно задать стиль для ссылок с помощью a:link и a:visited и a:hover*/
 
-/* HEADER */
+/**************************
+***************************
+********* HEADER **********
+***************************
+***************************
+*/
+
+
 #for_header_bg{
     background: -webkit-linear-gradient(0deg, rgb(12, 7, 25), rgb(33, 16, 51), rgb(33, 21, 55));
     background: -moz-linear-gradient(0deg, rgb(12, 7, 25), rgb(33, 16, 51), rgb(33, 21, 55));
@@ -47,7 +54,13 @@ a:hover{
     height: auto;
 }
 
-/* NAVIGATION */
+/*
+**********************************
+**********************************
+*********** NAVIGATION ***********
+**********************************
+**********************************
+ */
 .navbar{
     font-family:'Rounded_Elegance';
     background: -webkit-linear-gradient(0deg, rgb(12, 7, 25), rgb(33, 16, 51), rgb(33, 21, 55));
@@ -68,7 +81,154 @@ a:hover{
     text-decoration: underline;
 }
 
-/* REFERENCES LIST */
+/*
+*****************************
+*****************************
+******** POPUP FORM *********
+*****************************
+*****************************
+ */
+
+.popup-overlay{
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(73, 11, 65, 0.486);
+    z-index: 100;
+}
+.popWindow{
+    display: none;
+    max-width: 720px;
+    top:50%;
+    left:50%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 30px rgba(18, 17, 12, 0.5);
+    background-color: rgb(117, 103, 196);
+}
+.popWindow h2{
+    color:white;
+    font-size: 18px;
+    z-index: 10;
+    position: relative;
+}
+.close-btn{
+    float:right;
+    font-size: 40px;
+    line-height: 20px;
+    cursor: pointer;
+    color: rgb(34, 34, 34);
+    padding: 10px; 
+}
+.popup-form {
+    max-width: 300px;
+}
+.popup-form input, .popup-form textarea {
+    border: 1px solid #3d3d3d;
+    width: 100%;
+    font-size: 16px;
+    line-height: 32px;
+    padding: 5px 20px;
+    margin-bottom: 20px;
+    outline: none;
+    background: #2e2e2b;
+    color: #fff;
+    border-radius: 4px;
+}
+.popup-submit{
+    color: #161613;
+    background-color: #ff00ff;
+    padding: 10px 50px;
+    text-align: center;
+    font-size: 13px;
+    border: 1px solid #ff00ff;
+    box-shadow: none;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+.popup-submit:hover, .popup-submit:focus {
+    background-color: #ff00ff;
+    color: #fff;
+    text-decoration: none;
+}
+.popup-form .popup-submit {
+    font-size: 24px;
+    line-height: 54px;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    font-weight: 700;
+    text-align: center;
+    outline: none;
+    border-radius: 4px;
+}
+.popup-form .popup-submit:hover {
+    background-color: #7b2d8f;
+}
+.popup-form label {
+    color: #fff;
+    position: relative;
+    left: 10px;
+    bottom: 55px;
+    -webkit-transition: 0.28s;
+    transition: 0.28s;
+}
+.popup-form input:invalid {
+    box-shadow: none;
+}
+.popup-form input:valid {
+    border: 1px solid #161613;
+}
+.popup-form input:focus + .movable{
+     left: -62px;
+}
+.popup-form textarea:focus + .movable{
+    left: -62px;
+}
+.popup-form textarea:not(:placeholder-shown) + .movable{
+    left: -62px;
+}
+.popup-form input:not(:placeholder-shown) + .movable{
+    left: -62px;
+}
+.thank-you-window{
+    display: none;
+    max-width: 720px;
+    width: 500px;
+    height: 500px;
+    margin: 150px auto;
+    box-shadow: 0 0 30px rgba(18, 17, 12, 0.5);
+    background-color: rgb(117, 103, 196);
+}
+.thank-you-window .thank-you-message{
+    color: #fff;
+    font-size: 35px;
+}
+@media (max-width:500px) {
+    .popup-form input:focus + .movable{
+        display: none;
+   }
+   .popup-form textarea:focus + .movable{
+        display: none;
+    }
+    .thank-you-window{
+        width: inherit;
+        height: 250px;
+        font-size: 20px;
+    }
+}
+/*
+*******************************
+****** REFERENCES LIST ********
+*******************************
+*/
 #ref_list {
     display: flex;
     flex-direction: column;
@@ -88,7 +248,11 @@ a:hover{
     height: 155px;
 }
 
-/* SLIDER */
+/*
+*****************************
+********* SLIDER ************
+*****************************
+*/
 .wrapper{
     border: 1px solid rgb(199, 199, 199);
     font-family:'Rounded_Elegance';
@@ -118,7 +282,11 @@ a:hover{
     color:rgb(255, 255, 255);
 }
 
-/* TABLE */
+/*
+***************************
+********** TABLE **********
+***************************
+*/
 .table{
     margin: 0;
     font-family:'Rounded_Elegance';
@@ -158,7 +326,11 @@ a:hover{
     background-color: rgb(59, 71, 134);
 }
 
-/* CALCULATOR */
+/*
+***************************
+******* CALCULATOR ********
+***************************
+*/
 .calculator{
     background: -webkit-linear-gradient(0deg, rgb(12, 7, 25), rgb(33, 16, 51), rgb(33, 21, 55));
     background: -moz-linear-gradient(0deg, rgb(12, 7, 25), rgb(33, 16, 51), rgb(33, 21, 55));
@@ -194,7 +366,11 @@ a:hover{
     background-color: rgb(93, 82, 110);
 }
 
-/* FORM */
+/*
+***************************
+************* FORM ********
+***************************
+*/
 .form{
     display: flex;
     flex-direction: column;
@@ -214,7 +390,11 @@ a:hover{
     max-height: 300px;
 }
 
-/* FOOTER */
+/*
+***************************
+*********** FOOTER ********
+***************************
+*/
 footer{
     font-family:'Rounded_Elegance';
     background: -webkit-linear-gradient(0deg, rgb(12, 7, 25), rgb(33, 16, 51), rgb(33, 21, 55));
